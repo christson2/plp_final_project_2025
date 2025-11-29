@@ -1,0 +1,175 @@
+(sequelize) Warning: SQLite does not support 'BIGINT' with UNSIGNED or ZEROFILL. Plain 'BIGINT' will be used instead. 
+>> Check: https://www.sqlite.org/datatype3.html
+(sequelize) Warning: SQLite does not support 'INTEGER' with UNSIGNED or ZEROFILL. Plain 'INTEGER' will be used instead. 
+>> Check: https://www.sqlite.org/datatype3.html
+Error
+    at Database.<anonymous> (C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\dialects\sqlite\query.js:185:27)
+    at C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\dialects\sqlite\query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\dialects\sqlite\query.js:183:12)
+    at C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at async getNearbyProfiles (C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\src\controllers\profileController.js:343:30) {
+  name: 'SequelizeDatabaseError',
+  parent: [Error: SQLITE_ERROR: HAVING clause on a non-aggregate query] {
+    errno: 1,
+    code: 'SQLITE_ERROR',
+    sql: 'SELECT p.*, u.name, u.phone,\n' +
+      '                \n' +
+      "                (6371 * acos(cos(radians('6.4474')) * cos(radians(latitude)) * \n" +
+      "                cos(radians(longitude) - radians('3.3903')) + \n" +
+      "                sin(radians('6.4474')) * sin(radians(latitude)))) AS distance\n" +
+      '            \n' +
+      '                FROM profiles p\n' +
+      '                JOIN users u ON p.user_id = u.id\n' +
+      "                WHERE p.profile_type = 'seller' \n" +
+      '                AND p.is_complete = true\n' +
+      "                HAVING distance < '5'\n" +
+      '                ORDER BY distance ASC\n' +
+      '                LIMIT 50'
+  },
+  original: [Error: SQLITE_ERROR: HAVING clause on a non-aggregate query] {
+    errno: 1,
+    code: 'SQLITE_ERROR',
+    sql: 'SELECT p.*, u.name, u.phone,\n' +
+      '                \n' +
+      "                (6371 * acos(cos(radians('6.4474')) * cos(radians(latitude)) * \n" +
+      "                cos(radians(longitude) - radians('3.3903')) + \n" +
+      "                sin(radians('6.4474')) * sin(radians(latitude)))) AS distance\n" +
+      '            \n' +
+      '                FROM profiles p\n' +
+      '                JOIN users u ON p.user_id = u.id\n' +
+      "                WHERE p.profile_type = 'seller' \n" +
+      '                AND p.is_complete = true\n' +
+      "                HAVING distance < '5'\n" +
+      '                ORDER BY distance ASC\n' +
+      '                LIMIT 50'
+  },
+  sql: 'SELECT p.*, u.name, u.phone,\n' +
+    '                \n' +
+    "                (6371 * acos(cos(radians('6.4474')) * cos(radians(latitude)) * \n" +
+    "                cos(radians(longitude) - radians('3.3903')) + \n" +
+    "                sin(radians('6.4474')) * sin(radians(latitude)))) AS distance\n" +
+    '            \n' +
+    '                FROM profiles p\n' +
+    '                JOIN users u ON p.user_id = u.id\n' +
+    "                WHERE p.profile_type = 'seller' \n" +
+    '                AND p.is_complete = true\n' +
+    "                HAVING distance < '5'\n" +
+    '                ORDER BY distance ASC\n' +
+    '                LIMIT 50',
+  parameters: {}
+}
+Error
+    at Database.<anonymous> (C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\dialects\sqlite\query.js:185:27)
+    at C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\dialects\sqlite\query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\dialects\sqlite\query.js:183:12)
+    at C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at async getNearbyProfiles (C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\src\controllers\profileController.js:343:30) {
+  name: 'SequelizeDatabaseError',
+  parent: [Error: SQLITE_ERROR: HAVING clause on a non-aggregate query] {
+    errno: 1,
+    code: 'SQLITE_ERROR',
+    sql: 'SELECT p.*, u.name, u.phone,\n' +
+      '                \n' +
+      "                (6371 * acos(cos(radians('6.4474')) * cos(radians(latitude)) * \n" +
+      "                cos(radians(longitude) - radians('3.3903')) + \n" +
+      "                sin(radians('6.4474')) * sin(radians(latitude)))) AS distance\n" +
+      '            \n' +
+      '                FROM profiles p\n' +
+      '                JOIN users u ON p.user_id = u.id\n' +
+      "                WHERE p.profile_type = 'seller' \n" +
+      '                AND p.is_complete = true\n' +
+      "                HAVING distance < '5'\n" +
+      '                ORDER BY distance ASC\n' +
+      '                LIMIT 50'
+  },
+  original: [Error: SQLITE_ERROR: HAVING clause on a non-aggregate query] {
+    errno: 1,
+    code: 'SQLITE_ERROR',
+    sql: 'SELECT p.*, u.name, u.phone,\n' +
+      '                \n' +
+      "                (6371 * acos(cos(radians('6.4474')) * cos(radians(latitude)) * \n" +
+      "                cos(radians(longitude) - radians('3.3903')) + \n" +
+      "                sin(radians('6.4474')) * sin(radians(latitude)))) AS distance\n" +
+      '            \n' +
+      '                FROM profiles p\n' +
+      '                JOIN users u ON p.user_id = u.id\n' +
+      "                WHERE p.profile_type = 'seller' \n" +
+      '                AND p.is_complete = true\n' +
+      "                HAVING distance < '5'\n" +
+      '                ORDER BY distance ASC\n' +
+      '                LIMIT 50'
+  },
+  sql: 'SELECT p.*, u.name, u.phone,\n' +
+    '                \n' +
+    "                (6371 * acos(cos(radians('6.4474')) * cos(radians(latitude)) * \n" +
+    "                cos(radians(longitude) - radians('3.3903')) + \n" +
+    "                sin(radians('6.4474')) * sin(radians(latitude)))) AS distance\n" +
+    '            \n' +
+    '                FROM profiles p\n' +
+    '                JOIN users u ON p.user_id = u.id\n' +
+    "                WHERE p.profile_type = 'seller' \n" +
+    '                AND p.is_complete = true\n' +
+    "                HAVING distance < '5'\n" +
+    '                ORDER BY distance ASC\n' +
+    '                LIMIT 50',
+  parameters: {}
+}
+Error
+    at Database.<anonymous> (C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\dialects\sqlite\query.js:185:27)
+    at C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\dialects\sqlite\query.js:183:50
+    at new Promise (<anonymous>)
+    at Query.run (C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\dialects\sqlite\query.js:183:12)
+    at C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\node_modules\sequelize\lib\sequelize.js:315:28
+    at async getNearbyProfiles (C:\Users\hp\Desktop\Desktop\My Learning\Software Development_PLP_July_2025\freemart\backend\src\controllers\profileController.js:343:30) {
+  name: 'SequelizeDatabaseError',
+  parent: [Error: SQLITE_ERROR: HAVING clause on a non-aggregate query] {
+    errno: 1,
+    code: 'SQLITE_ERROR',
+    sql: 'SELECT p.*, u.name, u.phone,\n' +
+      '                \n' +
+      "                (6371 * acos(cos(radians('6.4474')) * cos(radians(latitude)) * \n" +
+      "                cos(radians(longitude) - radians('3.3903')) + \n" +
+      "                sin(radians('6.4474')) * sin(radians(latitude)))) AS distance\n" +
+      '            \n' +
+      '                FROM profiles p\n' +
+      '                JOIN users u ON p.user_id = u.id\n' +
+      "                WHERE p.profile_type = 'seller' \n" +
+      '                AND p.is_complete = true\n' +
+      "                HAVING distance < '5'\n" +
+      '                ORDER BY distance ASC\n' +
+      '                LIMIT 50'
+  },
+  original: [Error: SQLITE_ERROR: HAVING clause on a non-aggregate query] {
+    errno: 1,
+    code: 'SQLITE_ERROR',
+    sql: 'SELECT p.*, u.name, u.phone,\n' +
+      '                \n' +
+      "                (6371 * acos(cos(radians('6.4474')) * cos(radians(latitude)) * \n" +
+      "                cos(radians(longitude) - radians('3.3903')) + \n" +
+      "                sin(radians('6.4474')) * sin(radians(latitude)))) AS distance\n" +
+      '            \n' +
+      '                FROM profiles p\n' +
+      '                JOIN users u ON p.user_id = u.id\n' +
+      "                WHERE p.profile_type = 'seller' \n" +
+      '                AND p.is_complete = true\n' +
+      "                HAVING distance < '5'\n" +
+      '                ORDER BY distance ASC\n' +
+      '                LIMIT 50'
+  },
+  sql: 'SELECT p.*, u.name, u.phone,\n' +
+    '                \n' +
+    "                (6371 * acos(cos(radians('6.4474')) * cos(radians(latitude)) * \n" +
+    "                cos(radians(longitude) - radians('3.3903')) + \n" +
+    "                sin(radians('6.4474')) * sin(radians(latitude)))) AS distance\n" +
+    '            \n' +
+    '                FROM profiles p\n' +
+    '                JOIN users u ON p.user_id = u.id\n' +
+    "                WHERE p.profile_type = 'seller' \n" +
+    '                AND p.is_complete = true\n' +
+    "                HAVING distance < '5'\n" +
+    '                ORDER BY distance ASC\n' +
+    '                LIMIT 50',
+  parameters: {}
+}
